@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 function Layout() {
     return (
-        <div className=" flex flex-col min-h-screen items-center w-full">
+        <div className=" flex flex-col min-h-svh md:min-h-screen items-center w-full">
             <Header />
             <main className=" flex flex-grow bg-mainBackground text-white w-full">
                 <Outlet />
