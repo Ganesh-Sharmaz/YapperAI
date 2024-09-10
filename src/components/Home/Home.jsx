@@ -185,7 +185,7 @@ function Home() {
 
             {/* for small screens */}
 
-            <Dropdown>
+            <Dropdown className="md:hidden">
                 <DropdownTrigger className="py-2">
                     <Button variant="solid" color="primary" className="capitalize font-outfit ring-2 ring-blue-500 focus:ring-blue-400 rounded-full mb-3 transition ease-in-out">
                         {selectedValue}
