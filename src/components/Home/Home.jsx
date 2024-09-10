@@ -185,6 +185,7 @@ function Home() {
 
             {/* for small screens */}
 
+            <div className="md:hidden">
             <Dropdown className="md:hidden">
                 <DropdownTrigger className="py-2">
                     <Button variant="solid" color="primary" className="capitalize font-outfit ring-2 ring-blue-500 focus:ring-blue-400 rounded-full mb-3 transition ease-in-out">
@@ -211,6 +212,7 @@ function Home() {
                     }
                 </DropdownMenu>
             </Dropdown>
+            </div>
 
             {/* <div className="md:hidden  shadow-lg items-center  p-5 bg-[#2c2b2b] m-2 md:p-2 md:w-full md:items-center cursor-pointer rounded-lg space-y-3 md:z-0 z-10 ">
                 <div className="flex flex-col gap-2 ">
