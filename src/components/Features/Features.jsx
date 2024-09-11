@@ -4,7 +4,7 @@ import FeatureCard from './FeatureCard'
 function Features() {
   return (
         <section className="w-full  mb-16">
-        <h2 className="text-8xl font-semibold mb-10">
+        <h2 className="md:text-8xl text-6xl text-pretty font-semibold mb-10">
             Personalities that Speak to You
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -15,7 +15,7 @@ import Hero from "../Hero/Hero.jsx";
 function SignUp() {
     
     return (
-        <div className="w-full md:px-10 h-fit">
+        <div className="w-full md:px-10 h-fit px-5 px">
             <Hero />
 
             {/* Home page */}

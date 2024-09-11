@@ -8,7 +8,7 @@ function CallToAction() {
                 });
               };
   return (
-        <section className=" text-center h-screen place-content-center pt-20">
+        <section className=" text-center h-svh md:h-screen place-content-center pt-20">
         <h2 className="text-8xl font-semibold mb-4">
             Ready to Chat?
         </h2>
@@ -18,7 +18,7 @@ function CallToAction() {
         </p>
         <button
         onClick={scrollToTop}
-        className="bg-blue-400 text-white px-6 py-3 rounded-lg text-6xl font-bold hover:bg-blue-600 transition duration-300">
+        className="bg-blue-400 text-white px-6 py-3 rounded-lg text-5xl font-bold hover:bg-blue-600 transition duration-300">
             Get Started
         </button>
     </section>

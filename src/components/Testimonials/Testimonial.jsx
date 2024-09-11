@@ -4,7 +4,7 @@ import TestimonialCard from './TestimonialCard'
 function Testimonial() {
   return (
         <section className="w-full  mb-16">
-        <h2 className="text-8xl font-semibold mb-6">
+        <h2 className="md:text-8xl text-6xl font-semibold mb-6">
             What Our Users Say
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
