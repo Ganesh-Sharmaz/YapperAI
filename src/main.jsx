@@ -14,7 +14,7 @@ import NotFound from "./components/NotFound/NotFound.jsx";
 import { NextUIProvider } from "@nextui-org/react";
 import SignUp from "./components/Sign Up/SignUp.jsx";
 import PrivateRoute from "./components/Private Route/PrivateRoute.jsx";
-import ReverseRoute from "./components/Private Route/ReverseRoute.jsx";
+
 
 const router = createBrowserRouter(
     createRoutesFromElements(
