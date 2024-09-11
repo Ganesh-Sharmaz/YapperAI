@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
+
 import "./index.css";
 import Layout from "./Layout.jsx";
 import Home from "./components/Home/Home.jsx";
@@ -12,12 +12,17 @@ import {
 } from "react-router-dom";
 import NotFound from "./components/NotFound/NotFound.jsx";
 import { NextUIProvider } from "@nextui-org/react";
+import SignUp from "./components/Sign Up/SignUp.jsx";
+import PrivateRoute from "./components/Private Route/PrivateRoute.jsx";
+import ReverseRoute from "./components/Private Route/ReverseRoute.jsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<Layout />}>
-            <Route path="" element={<Home />} />
-            <Route path="*" element={<NotFound />} /> {/* 404 fallback */}
+        <Route path="/" element={<Layout/>}>
+            
+            <Route path="" element={<PrivateRoute><Home/></PrivateRoute>}/>
+            <Route path="/signup" element={<SignUp />}/>
+            <Route path="*" element={<NotFound/>}/>
         </Route>
     )
 );
