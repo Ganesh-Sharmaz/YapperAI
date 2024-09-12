@@ -17,6 +17,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import PrivateRoute from "./components/Private Route/PrivateRoute.jsx";
 
 import SignUp from "./components/Sign Up/SignUp.jsx";
+import { gitInfoLoader } from "./components/About/About.jsx";
 
 
 
@@ -26,7 +27,7 @@ const router = createBrowserRouter(
             
             <Route path="" element={<PrivateRoute><Home/></PrivateRoute>}/>
             
-            <Route path="/signup" element={<SignUp/>}/>
+            <Route loader={gitInfoLoader} path="/signup" element={<SignUp/>}/>
             
             <Route path="*" element={<NotFound/>}/>
         </Route>

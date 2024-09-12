@@ -3,6 +3,7 @@ import React from "react";
 
 import Hero from "../Hero/Hero.jsx";
 import { Suspense } from "react";
+import About from "../About/About.jsx";
 
 const LazyFeatures = React.lazy(() => import("../Features/Features.jsx"))
 const LazyBuildInfo = React.lazy(() => import("../BuildInfo/BuildInfo.jsx"))
@@ -39,6 +40,9 @@ function SignUp() {
                 <Suspense fallback="Loading...">
                     <LazyCTA/>
                 </Suspense>
+
+                {/* Developer Section */}
+                <About/>
             </div>
             </Suspense>
         </div>
