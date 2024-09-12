@@ -41,7 +41,7 @@ function Hero() {
 
     return (
         <div className="flex min-h-fit md:flex-row flex-col md:py-24 py-10 font-outfit border-b-[1px] border-slate-800">
-            <div className="md:w-1/2 text-center flex flex-col items-center justify-center gap-4 md:border-r-[1px] border-slate-700 border-b-[1px] pb-5 md:pb-0 md:pt-10 space-y-5 ">
+            <div className="md:w-1/2 text-center flex flex-col items-center justify-center gap-4 md:border-r-[1px] border-slate-700 border-b-[1px] md:border-b-0 pb-5 md:pb-0 md:pt-10 space-y-5 ">
                 <div className="flex gap-5 text-transparent bg-clip-text bg-gradient-to-br from-[#FF00FF] to-[#FF4500]">
                     <h1 className="md:text-8xl text-6xl font-bold text-center">YAPPER AI</h1>
                 </div>
