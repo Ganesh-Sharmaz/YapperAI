@@ -53,8 +53,8 @@ This project is open source under the MIT License. Feel free to use it as you se
 
 ## 🌐 Links
 
--**Live App:** [Yapper AI](https://yapper-ai.vercel.app/)
--**Github Repository URL:** [Yapper AI Github](https://github.com/Ganesh-Sharmaz/YapperAI)
+- **Live App:** [Yapper AI](https://yapper-ai.vercel.app/)
+- **Github Repository URL:** [Yapper AI Github](https://github.com/Ganesh-Sharmaz/YapperAI)
 
 ## ✨ Contributors
 
