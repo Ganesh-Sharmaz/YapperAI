@@ -25,7 +25,7 @@ const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<Layout/>}>
             
-            <Route path="" element={<Suspense fallback='Loading...'><PrivateRoute><Home/></PrivateRoute></Suspense>}/>
+            <Route path="" element={<Suspense fallback='Loading...'><PrivateRoute><LazyHome/></PrivateRoute></Suspense>}/>
             
             <Route path="/signup" element={<Suspense fallback='loading...'><LazySignUp/></Suspense>}/>
             
