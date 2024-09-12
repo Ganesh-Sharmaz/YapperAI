@@ -15,19 +15,18 @@ import NotFound from "./components/NotFound/NotFound.jsx";
 import { NextUIProvider } from "@nextui-org/react";
 
 import PrivateRoute from "./components/Private Route/PrivateRoute.jsx";
-import { Suspense } from "react";
 
-const LazySignUp = React.lazy(() => import('./components/Sign Up/SignUp.jsx'))
-const LazyHome = React.lazy(() => import('./components/Home/Home.jsx'))
+import SignUp from "./components/Sign Up/SignUp.jsx";
+
 
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<Layout/>}>
             
-            <Route path="" element={<Suspense fallback='Loading...'><PrivateRoute><LazyHome/></PrivateRoute></Suspense>}/>
+            <Route path="" element={<PrivateRoute><Home/></PrivateRoute>}/>
             
-            <Route path="/signup" element={<Suspense fallback='loading...'><LazySignUp/></Suspense>}/>
+            <Route path="/signup" element={<SignUp/>}/>
             
             <Route path="*" element={<NotFound/>}/>
         </Route>
