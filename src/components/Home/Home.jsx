@@ -241,8 +241,8 @@ function Home() {
                                 key={index}
                                 className={` px-4 p-2 mt-3 font-outfit  rounded-3xl ${
                                     msg.type === "user"
-                                        ? "bg-[#2c2b2b] text-white self-end ml-20 text-right text-pretty w-fit"
-                                        : "bg-[#2c2b2b] text-white self-start mr-20 text-pretty"
+                                        ? "bg-[#2c2b2b] text-white self-end md:ml-20 ml-5 text-right text-pretty w-fit"
+                                        : "bg-[#2c2b2b] text-white self-start md:mr-20 mr-5 text-pretty"
                                 }`}
                             >
                                 <ReactMarkdown
