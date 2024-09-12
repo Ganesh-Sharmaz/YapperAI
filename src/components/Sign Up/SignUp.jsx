@@ -1,16 +1,13 @@
-import { Google } from "@mui/icons-material";
-import React from "react";
-import { motion } from "framer-motion";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { auth } from "../Server/server.js";
 
-import { useNavigate } from "react-router-dom";
-import { div } from "framer-motion/client";
-import Features from "../Features/Features.jsx";
-import Testimonial from "../Testimonials/Testimonial.jsx";
-import BuildInfo from "../BuildInfo/BuildInfo.jsx";
-import CallToAction from "../CallToAction/CallToAction.jsx";
+import React from "react";
+
 import Hero from "../Hero/Hero.jsx";
+import { Suspense } from "react";
+
+const LazyFeatures = React.lazy(() => import("../Features/Features.jsx"))
+const LazyBuildInfo = React.lazy(() => import("../BuildInfo/BuildInfo.jsx"))
+const LazyTestimonials = React.lazy(() => import("../Testimonials/Testimonial.jsx"))
+const LazyCTA = React.lazy(() => import("../CallToAction/CallToAction.jsx"))
 
 function SignUp() {
     
@@ -20,19 +17,30 @@ function SignUp() {
 
             {/* Home page */}
 
+            <Suspense fallback="Loading...">
             <div className="font-outfit min-h-screen bg-[#1a1a1a] text-white flex flex-col  py-8">
                 {/* Features Section */}
-                <Features />
+                <Suspense fallback="Loading...">
+                    <LazyFeatures/>
+                </Suspense>
+                
 
                 {/* Build Info Section */}
-                <BuildInfo />
+                <Suspense fallback="Loading...">
+                    <LazyBuildInfo/>
+                </Suspense>
 
                 {/* Testimonials Section */}
-                <Testimonial />
+                <Suspense fallback="Loading...">
+                    <LazyTestimonials/>
+                </Suspense>
 
                 {/* Call to Action */}
-                <CallToAction />
+                <Suspense fallback="Loading...">
+                    <LazyCTA/>
+                </Suspense>
             </div>
+            </Suspense>
         </div>
     );
 }

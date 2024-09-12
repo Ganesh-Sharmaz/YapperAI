@@ -5,9 +5,7 @@ import { Send } from "@mui/icons-material";
 import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 import "highlight.js/styles/github.css";
-import remarkEmoji from "remark-emoji";
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
+
 import "katex/dist/katex.min.css";
 
 import {
@@ -19,7 +17,7 @@ import {
 } from "@nextui-org/react";
 
 import ReactMarkdown from "react-markdown";
-import { h1 } from "framer-motion/client";
+
 
 function Home() {
     console.log("Arrived at Homepage");
