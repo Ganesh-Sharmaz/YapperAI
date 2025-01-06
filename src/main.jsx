@@ -18,6 +18,7 @@ import PrivateRoute from "./components/Private Route/PrivateRoute.jsx";
 
 import SignUp from "./components/Sign Up/SignUp.jsx";
 import { gitInfoLoader } from "./components/About/About.jsx";
+import { Analytics } from "@mui/icons-material";
 
 
 
@@ -36,6 +37,7 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
+        <Analytics/>
         <NextUIProvider>
             <RouterProvider router={router} />
         </NextUIProvider>
