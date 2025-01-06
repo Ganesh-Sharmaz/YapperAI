@@ -3,6 +3,7 @@ import Header from "./components/Header/Header.jsx";
 
 
 import { Outlet } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 function Layout() {
     
@@ -16,7 +17,7 @@ function Layout() {
             <footer className="bg-mainBackground hidden md:block pt-3 md:pt-0 text-white md:px-10 py-3 w-full text-center">
                 <p>Everything that Yapper AI says is made up or Maybe not...</p>
             </footer>
-            
+            <Analytics/>
         </div>
     );
 }
