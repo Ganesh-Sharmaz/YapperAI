@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Header/Header.jsx";
-import { Analytics } from "@vercel/analytics/react"
+
 
 import { Outlet } from "react-router-dom";
 

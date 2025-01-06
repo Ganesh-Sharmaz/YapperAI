@@ -18,7 +18,7 @@ import PrivateRoute from "./components/Private Route/PrivateRoute.jsx";
 
 import SignUp from "./components/Sign Up/SignUp.jsx";
 import { gitInfoLoader } from "./components/About/About.jsx";
-import { Analytics } from "@mui/icons-material";
+import { Analytics } from "@vercel/analytics/react"
 
 
 
