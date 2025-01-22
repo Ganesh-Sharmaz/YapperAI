@@ -1,6 +1,6 @@
 ---
 name: "Bug Report 🐛"
-description: "Found something off? Let us know so we can fix it pronto!"
+about: "Found something off? Let us know so we can fix it pronto!"
 title: "[BUG] Your snazzy title here"
 labels: [bug]
 assignees: ''
