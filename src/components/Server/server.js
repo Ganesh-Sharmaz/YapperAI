@@ -4,13 +4,13 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB8P56LS_YnSotDJJsjPDjZtLqNiPQEOUo",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "yapper-ai-bot.firebaseapp.com",
   projectId: "yapper-ai-bot",
   storageBucket: "yapper-ai-bot.appspot.com",
-  messagingSenderId: "982335835743",
-  appId: "1:982335835743:web:027001abe6785eb96c95ea",
-  measurementId: "G-8MWE049HKZ"
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
