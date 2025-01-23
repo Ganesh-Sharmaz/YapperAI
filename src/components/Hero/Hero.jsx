@@ -60,7 +60,7 @@ function Hero() {
                 >
                     <img
                         className="text-xl w-[45.4px] mb-[0.7px]"
-                        src="/src/assets/google-color-svgrepo-com.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/resume-builder-2024-3d12f.appspot.com/o/Template%2F7123025_logo_google_g_icon.png?alt=media&token=96b89fcc-d2c5-4d5e-aab9-a31172bf85ff"
                         alt="googleicon"
                     />
                     <h2 className=" bg-#1a1a1a">Sign in with Google</h2>
