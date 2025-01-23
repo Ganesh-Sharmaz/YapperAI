@@ -2,6 +2,7 @@ import React from "react";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../Server/server.js";
 import { useNavigate } from "react-router-dom";
+import GoogleImg from '../../assets/google-color-svgrepo-com.png'
 
 function Hero() {
     const navigate = useNavigate();
@@ -60,7 +61,7 @@ function Hero() {
                 >
                     <img
                         className="text-xl w-[45.4px] mb-[0.7px]"
-                        src="/src/assets/google-color-svgrepo-com.png"
+                        src={GoogleImg}
                         alt="googleicon"
                     />
                     <h2 className=" bg-#1a1a1a">Sign in with Google</h2>
