@@ -3,6 +3,8 @@ import { getAuth, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import ShinyText from "../ui/ShineyText";
 import GradientText from "../ui/GradientText";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth } from "../Server/server.js";
 
 function Header() {
     const navigate = useNavigate()
@@ -18,6 +20,39 @@ function Header() {
             })
             .catch((error) => {
                 console.log("Error", error);
+            });
+    };
+
+    const provider = new GoogleAuthProvider();
+    const handleSignIn = () => {
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                const credential =
+                    GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                // The signed-in user info.
+                const user = result.user;
+                console.log("User: ", user);
+                console.log("sign in successful");
+
+                if (user) {
+                    localStorage.setItem("userName", user.displayName);
+                    navigate("/");
+                }
+                // IdP data available using getAdditionalUserInfo(result)
+                // ...
+            })
+            .catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log("Error:", errorCode, errorMessage);
+                const email = error.customData.email;
+                // The AuthCredential type that was used.
+                const credential =
+                    GoogleAuthProvider.credentialFromError(error);
+                // ...
             });
     };
 
@@ -63,7 +98,7 @@ function Header() {
                     </>
                 ) : (
                     <button
-                        onClick={() => navigate('/signup')}
+                        onClick={() => handleSignIn()}
                         className="group relative px-4 py-2 rounded-lg bg-[#1A1A1F] hover:bg-[#2A2A2F] text-white transition-all duration-300 overflow-hidden"
                     >
                         <span className="relative z-10 flex items-center space-x-2">
