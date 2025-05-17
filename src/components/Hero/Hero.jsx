@@ -3,7 +3,6 @@ import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../Server/server.js";
 import { useNavigate } from "react-router-dom";
 import GoogleImg from "../../assets/google-color-svgrepo-com.png";
-import ShineyText from "../../components/ui/ShineyText.jsx";
 import TrueFocus from "../ui/TrueFocus.jsx";
 import CountUp from "../ui/CountUp.jsx";
 import VariableProximity from "../ui/VariableProximity.jsx";
