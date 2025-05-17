@@ -19,7 +19,7 @@ function SignUp() {
             {/* Home page */}
 
             <Suspense fallback="Loading...">
-            <div className="font-outfit min-h-screen bg-[#1a1a1a] text-white flex flex-col  py-8">
+            <div className="font-outfit min-h-screen text-white flex flex-col ">
                 {/* Features Section */}
                 <Suspense fallback="Loading...">
                     <LazyFeatures/>

@@ -2,9 +2,12 @@ import React from 'react'
 
 function TestimonialCard( { name, feedback } ) {
   return (
-        <div className="bg-[#f64f59] p-6 rounded-lg shadow-lg font-outfit hover:shadow-red-700 backdrop-blur-3xl hover:scale-[1.02] transition duration-300">
-        <p className="italic text-gray-300 mb-4 text-xl">"{feedback}"</p>
-        <h4 className="text-2xl font-bold text-yellow-400">{name}</h4>
+    <div className="group relative bg-[#1A1A1F]/50 p-6 rounded-xl border border-[#2A2A2F]/50 hover:border-[#FF00FF]/30 transition-all duration-300">
+      <div className="absolute inset-0 bg-gradient-to-r from-[#FF00FF]/5 to-[#FF4500]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+      <div className="relative z-10">
+      <p className="text-[#E0E0E0] text-lg">"{feedback}"</p>
+        <h3 className="text-2xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#FF00FF] to-[#FF4500]">{name}</h3>
+        </div>
       </div>
   )
 }
